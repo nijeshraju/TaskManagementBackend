@@ -13,7 +13,7 @@ const seedUser = async () => {
   try {
     await connectDB();
 
-    const existingUser = await User.findOne({ name: data.username });
+    const existingUser = await User.findOne({ username: data.username });
     if (existingUser) {
       console.log("User already exists:", existingUser);
       return;
