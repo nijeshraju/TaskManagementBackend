@@ -22,8 +22,9 @@ const createTask = async (req, res) => {
 const getAllTasks = async (req, res) => {
   try {
     const { filter } = req.query;
+    const { userId } = req.user;
 
-    let query = {};
+    let query = { userId };
     if (filter) query.status = filter === "completed" ? true : false;
 
     const tasks = await Task.find(query);

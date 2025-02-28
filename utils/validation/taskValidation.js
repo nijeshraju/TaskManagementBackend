@@ -1,7 +1,6 @@
 const Joi = require("joi");
 
 const createTaskSchema = Joi.object({
-  userId: Joi.string().required(),
   title: Joi.string().min(3).required().messages({
     "string.empty": "Title is required",
     "string.min": "Task title must be at least 3 characters",
