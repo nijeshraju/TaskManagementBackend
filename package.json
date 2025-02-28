@@ -1,0 +1,29 @@
+{
+  "name": "task_management_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nijeshraju/TaskManagementBackend.git",
+  "author": "nijeshraju <nijeshrajuk007@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "seed": "node ./seeder/user.js",
+    "prettier:write": "prettier --write ."
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.11.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.2"
+  }
+}
