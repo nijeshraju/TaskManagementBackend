@@ -34,9 +34,11 @@ yarn dev
 ```
 
 ## API Endpoints
+
 - **POST** `/api/auth/login` → Authenticate user and return JWT token
 
 ### Task Management
+
 - **GET** `/api/tasks` → Fetch all tasks
 - **POST** `/api/tasks` → Create a new task
 - **PUT** `/api/tasks/:id` → Update a task’s status
